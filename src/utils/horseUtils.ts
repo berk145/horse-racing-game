@@ -11,8 +11,7 @@ export const horseGenarate = () => {
     const randomColorIndex = Math.floor(Math.random() * availableColors.length) // Create random index for color
     newHorseList.push({
       name: availableNames.splice(randomNameIndex, 1)[0], // Assign name and remove the used name from list
-      condition: Math.floor(Math.random() * (100 - 50 + 1)) + 50, //REMOVE
-      //condition: Math.floor(Math.random() * 99) + 1,
+      condition: Math.floor(Math.random() * 99) + 1,
       color: availableColors.splice(randomColorIndex, 1)[0], //  Assign color and remove the color name from list
       position: 0,
     })
