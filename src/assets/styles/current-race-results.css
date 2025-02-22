@@ -1,0 +1,39 @@
+.current-race-result-container {
+  width: 800px;
+  position: relative;
+  margin: 0px 24px 16px;
+
+  h2 {
+    color: #333;
+    margin-bottom: 16px;
+  }
+}
+
+.lap-result {
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+  }
+
+  thead {
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #eee;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: medium;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+  }
+}

@@ -1,0 +1,65 @@
+.race-track {
+  position: relative;
+  background-color: #f5f5f5;
+  width: 800px;
+  height: 800px;
+  margin: 0px 24px 0px 48px;
+}
+
+.lanes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.lane {
+  position: relative;
+  height: calc(100% / 10);
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.lane p {
+  font-size: small;
+  font-weight: bold;
+}
+
+.horse {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0px;
+  transition: left 0.02s linear;
+}
+
+.finish-line {
+  position: absolute;
+  background-color: #000000;
+  height: 100%;
+  width: 4px;
+  top: 0;
+  right: 0;
+}
+
+.start-next-round-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+
+  button {
+    margin-right: 24px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4169e1;
+    color: white;
+
+    &:hover {
+      background-color: #284b9b;
+    }
+  }
+}

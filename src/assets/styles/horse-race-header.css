@@ -1,0 +1,56 @@
+.horse-race-header {
+  height: 88px;
+  background-color: #eeeeee;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.horse-race-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.horse-race-header-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.horse-race-header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.generate-program-button,
+.start-pause-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-program-button {
+  background-color: #4169e1;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #284b9b;
+  }
+}
+
+.start-pause-button {
+  background-color: #708090;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #536373;
+  }
+  &:disabled {
+    background-color: #c2c0c0;
+  }
+}
