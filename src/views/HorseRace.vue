@@ -34,8 +34,8 @@ export default defineComponent({
     const renderContent = () => horses.value.length > 0
 
     return {
-      horses: horses.value,
-      races: races.value,
+      horses,
+      races,
       renderContent,
     }
   },
