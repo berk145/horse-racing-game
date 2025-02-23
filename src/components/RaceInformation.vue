@@ -41,7 +41,7 @@
               v-for="participant in getRaceResults(race)"
               :key="participant.name + participant.position"
             >
-              <td>{{ participant.position }}</td>
+              <td>{{ participant.position + 1 }}</td>
               <td>{{ participant.name }}</td>
             </tr>
           </tbody>
